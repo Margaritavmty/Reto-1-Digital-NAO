@@ -1,38 +1,88 @@
 body {
-    color: #faf2f2;
-    background-color: #D3E6FE;
-
-    font-family: Montserrat;
-    font-size: 16px;
-    position: relative;
-    height: 100vh;
-    font-weight: 400;
+  color: #faf2f2;
+  background-color: #D3E6FE;
+  font-family: Montserrat;
+  font-size: 16px;
+  position: relative;
+  height: 100vh;
+  font-weight: 400;
 }
 
-  .banner {
-    display: flex; /* Utilizamos flexbox para alinear elementos */
-    align-items: center; /* Alineamos verticalmente los elementos */
-    padding: 32px; /* Espaciado interno del banner */
-    background-color:#D3E6FE;
-    
-  }
-  
-  .texto {
-    flex: 1; /* El texto ocupará el espacio restante */
-    margin-left: 80px;
-    
-  }
-  
-  .imagen {
-    margin-left: 32x; /* Espaciado entre el texto y la imagen */
-    
-  }
-  
-  .imagen img {
-    max-width: 90%; /* La imagen se ajustará al ancho del contenedor */
-    height: auto; /* Para mantener la proporción */
-    
-  }
+.banner {
+  justify-content: space-between;
+  display: flex;
+  align-items:center;
+  padding: 40px;
+  text-align: start;
+  background-color: #D3E6FE; /* Color de fondo del banner */
+-ms-grid-row-align: center;
+}
 
+.texto {
+  flex: 1;
+  margin-right: 0px; /* Espaciado derecho del texto */
+  
+ 
+}
+
+.imagen {
+  margin-left: px; /* Espaciado izquierdo de la imagen */
+ 
+}
+
+.imagen img {
+  padding-top: 32px;
+  max-width: 100%;
+  height: auto;
+}
+.navbar {
+  position:fixed;
+}
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+
+
+
+
+container-fluid{
+  position: absolute;
+  display: flex;
+  padding-left: 0px;
+  padding-bottom: 16px;
+}
+
+
+
+
+.btn-bd-primary {
+  border-radius: 4px;
+  height: 48px;
+  padding: 8px;
+  text-align: center;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  background:#2563EB;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  
+    
+}
+
+.btn-bd-primary {
+  float: left;
+}
 
 
