@@ -8,25 +8,38 @@ body {
   font-weight: 400;
 }
 
+
+
+
+.montserrat> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .banner {
   justify-content: space-between;
   display: flex;
   align-items:center;
-  padding: 40px;
+  padding: 80px;
   text-align: start;
   background-color: #D3E6FE; /* Color de fondo del banner */
--ms-grid-row-align: center;
+  -ms-grid-row-align: center;
+  max-height: 600px;
 }
+
 
 .texto {
   flex: 1;
   margin-right: 0px; /* Espaciado derecho del texto */
-  
- 
+  color: #334155;
+  align-items: center;
+
 }
 
 .imagen {
   margin-left: px; /* Espaciado izquierdo de la imagen */
+  
  
 }
 
@@ -34,32 +47,37 @@ body {
   padding-top: 32px;
   max-width: 100%;
   height: auto;
+  max-height: 580px;
+  min-height: fit-content;
+  max-width: 600px;
+  
 }
-.navbar {
+
+.nav {
   position:fixed;
+  position: absolute
+  
+  
+
 }
-
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
-);
-
-
-
-
 
 container-fluid{
   position: absolute;
   display: flex;
   padding-left: 0px;
   padding-bottom: 16px;
+ 
+  
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
 }
-
-
+}
 
 
 .btn-bd-primary {
@@ -68,8 +86,8 @@ container-fluid{
   padding: 8px;
   text-align: center;
   align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
   background:#2563EB;
   font-size: 16px;
   border: none;
@@ -77,12 +95,50 @@ container-fluid{
   display: inline-block;
   vertical-align: middle;
   line-height: 1;
-  
-    
 }
 
 .btn-bd-primary {
   float: left;
 }
 
+.contenedor{
+  background-color: #0D2C5E;
+  align-items: center;
+  position:absolute;
+  display: flex;
+  padding-left: 0px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  text-align:left;
+  justify-content: center;
+  
+ 
+ 
+}
 
+.Imagen_Nosotros{
+  max-height: 600px;
+  min-height: 420px;
+}
+
+.col-md-6{
+  align-items: center;
+}
+
+.contenedor_servicios{
+  background-color: #ffffff;
+  align-items: center;
+  position:absolute;
+  display: flex;
+  padding-left: 0px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  text-align:left;
+  justify-content: center;
+  
+
+}
+
+.clearfix::after { 
+  content: ""; 
+  display: table; clear: both; }
