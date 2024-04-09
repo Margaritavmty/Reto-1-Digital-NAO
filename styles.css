@@ -1,94 +1,41 @@
 body {
   color: #faf2f2;
   background-color: #D3E6FE;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   position: relative;
   height: 100vh;
   font-weight: 400;
 }
 
-
-
-
-.montserrat> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
 .banner {
-  justify-content: space-between;
   display: flex;
-  align-items:center;
+  justify-content: space-between;
+  align-items: center;
   padding: 80px;
   text-align: start;
-  background-color: #D3E6FE; /* Color de fondo del banner */
-  -ms-grid-row-align: center;
+  background-color: #D3E6FE;
   max-height: 600px;
 }
 
-
 .texto {
   flex: 1;
-  margin-right: 0px; /* Espaciado derecho del texto */
   color: #334155;
-  align-items: center;
-
-}
-
-.imagen {
-  margin-left: px; /* Espaciado izquierdo de la imagen */
-  
- 
 }
 
 .imagen img {
-  padding-top: 32px;
   max-width: 100%;
   height: auto;
   max-height: 580px;
   min-height: fit-content;
   max-width: 600px;
-  
 }
-
-.nav {
-  position:fixed;
-  position: absolute
-  
-  
-
-}
-
-container-fluid{
-  position: absolute;
-  display: flex;
-  padding-left: 0px;
-  padding-bottom: 16px;
- 
-  
-  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    width: 100%;
-    padding-right: calc(var(--bs-gutter-x)* .5);
-    padding-left: calc(var(--bs-gutter-x)* .5);
-    margin-right: auto;
-    margin-left: auto;
-}
-}
-
 
 .btn-bd-primary {
   border-radius: 4px;
   height: 48px;
-  padding: 8px;
-  text-align: center;
-  align-items: center;
-  padding-left: 32px;
-  padding-right: 32px;
-  background:#2563EB;
+  padding: 8px 32px;
+  background: #2563EB;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -97,48 +44,37 @@ container-fluid{
   line-height: 1;
 }
 
-.btn-bd-primary {
-  float: left;
-}
-
-.contenedor{
+.contenedor {
   background-color: #0D2C5E;
-  align-items: center;
-  position:absolute;
   display: flex;
-  padding-left: 0px;
-  padding-bottom: 32px;
-  padding-top: 32px;
-  text-align:left;
+  padding: 32px;
+  text-align: left;
   justify-content: center;
-  
- 
- 
 }
 
-.Imagen_Nosotros{
-  max-height: 600px;
-  min-height: 420px;
-}
-
-.col-md-6{
-  align-items: center;
-}
-
-.contenedor_servicios{
+.contenedor_servicios {
   background-color: #ffffff;
-  align-items: center;
-  position:absolute;
   display: flex;
-  padding-left: 0px;
-  padding-bottom: 32px;
-  padding-top: 32px;
-  text-align:left;
+  padding: 32px;
+  text-align: left;
   justify-content: center;
-  
-
 }
 
-.clearfix::after { 
-  content: ""; 
-  display: table; clear: both; }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.section {
+  clear: both;
+  margin-bottom: 20px;
+}
+
+.texto_promo{
+  align-items: center;
+  color: #0D2C5E
+  font-size: 28px;
+  font-weight: 600;
+
+}
