@@ -1,11 +1,25 @@
 body {
   color: #faf2f2;
-  background-color: #D3E6FE;
-  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   position: relative;
   height: 100vh;
   font-weight: 400;
+   
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 }
 
 .banner {
@@ -15,7 +29,7 @@ body {
   padding: 80px;
   text-align: start;
   background-color: #D3E6FE;
-  max-height: 600px;
+  max-height: 800px;
 }
 
 .texto {
@@ -77,7 +91,37 @@ body {
   color: #0D2C5E
   font-size: 28px;
   font-weight: 600;
+  background-color: #fff; /* Color de fondo blanco */
+
 
 }
 
+.imagen-con-texto {
+  margin-bottom: 20px;
+  text-align: center; /* Centra el texto debajo de la imagen */
+}
+
+.texto {
+  color: #333; /* Color del texto */
+  font-size: 16px; /* Tamaño de fuente del texto */
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
+
+.container {
+  padding: 32px; /* Espacio interno del contenedor */
+  align-items: center;
+}
+
+.imagen-con-texto {
+  text-align: center; /* Alinea horizontalmente el texto e imagen */
+}
+
+
+.titulo{
+  padding-bottom: 24spx;;
+  font-weight: 700;
+  color: #0D2C5E;
+}
 
