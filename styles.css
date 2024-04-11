@@ -6,20 +6,10 @@ body {
   position: relative;
   height: 100vh;
   font-weight: 400;
-   
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
 }
 
-.montserrat-<uniquifier> {
+.montserrat {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
 }
 
 .banner {
@@ -28,7 +18,7 @@ body {
   align-items: center;
   padding: 80px;
   text-align: start;
-  background-color: #D3E6FE;
+  background-color: #d3e6fe;
   max-height: 800px;
 }
 
@@ -49,7 +39,7 @@ body {
   border-radius: 4px;
   height: 48px;
   padding: 8px 32px;
-  background: #2563EB;
+  background: #2563eb;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -59,7 +49,15 @@ body {
 }
 
 .contenedor {
-  background-color: #0D2C5E;
+  background-color: #0d2c5e;
+  display: flex;
+  padding: 32px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+.contenedora {
+  background-color: #d3e6fe;
   display: flex;
   padding: 32px;
   text-align: left;
@@ -86,14 +84,12 @@ body {
   margin-bottom: 20px;
 }
 
-.texto_promo{
+.texto_promo {
   align-items: center;
-  color: #0D2C5E
+  color: #0d2c5e;
   font-size: 28px;
   font-weight: 600;
-  background-color: #fff; /* Color de fondo blanco */
-
-
+  background-color: #ffffff; /* Color de fondo blanco */
 }
 
 .imagen-con-texto {
@@ -107,21 +103,84 @@ body {
   margin-top: 10px; /* Espacio entre la imagen y el texto */
 }
 
-
-
 .container {
   padding: 32px; /* Espacio interno del contenedor */
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .imagen-con-texto {
   text-align: center; /* Alinea horizontalmente el texto e imagen */
 }
 
-
-.titulo{
-  padding-bottom: 24spx;;
+.titulo {
+  padding-bottom: 24px;
   font-weight: 700;
-  color: #0D2C5E;
+  color: #0d2c5e;
 }
 
+.card {
+  min-height: 420px;
+  gap: 16px;
+  padding: 16px;
+}
+
+.img-fluid {
+  max-width: 100%; /* Establece el ancho máximo del SVG al ancho máximo de su contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+  padding-bottom: 16px;
+}
+
+.col-2 {
+  min-height: 160px; /* Establece el alto mínimo que deseas */
+}
+
+.col-md-2 {
+  padding: 16px;
+}
+
+.py-5 {
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.row {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.my-special-card {
+  background-color: #d3e6fe; /* Cambia el color de fondo de la tarjeta */
+  border-radius: 10px; /* Agrega bordes redondeados a la tarjeta */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra a la tarjeta */
+  align-items: center;
+}
+
+.my-special-card .card-title {
+  text-align: center;
+  color: #0d2c5e; /* Cambia el color del título de la tarjeta */
+  padding: 16px;
+}
+
+.my-special-card .card-text {
+  color: #0d2c5e; /* Cambia el color del texto de la tarjeta */
+  padding: 16px;
+}
+
+.my-special-card .card-img {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: 200px; /* Establece la altura deseada para la imagen */
+  border-top-left-radius: 10px; /* Aplica bordes redondeados solo a la esquina superior izquierda */
+  border-top-right-radius: 10px;}
+
+  .my-special-card .btn-bd-primary {
+    display: block; /* Convertir el botón en un elemento de bloque */
+    margin: 0 auto; /* Centrar horizontalmente el botón */
+    width: fit-content; /* Ajustar el ancho del botón al contenido */
+  }
